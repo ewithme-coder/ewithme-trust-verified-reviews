@@ -1,0 +1,588 @@
+/**
+ * Ewithme Trust Reviews — Frontend Widget Stylesheet
+ */
+
+/* 1. Compact Badge Pill */
+.ew-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 13px;
+  color: #1f2937;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  line-height: 1.2;
+}
+
+.ew-badge-stars {
+  color: var(--ew-gold, #f59e0b);
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.ew-badge-score {
+  font-weight: 700;
+  color: #111827;
+}
+
+.ew-badge-count {
+  color: #6b7280;
+}
+
+.ew-badge-stamp {
+  margin-left: 4px;
+  padding-left: 8px;
+  border-left: 1px solid #e5e7eb;
+  color: #059669;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.ew-badge-stamp a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.ew-badge-stamp a:hover {
+  text-decoration: underline;
+}
+
+/* 2. Full Reviews Widget Container */
+.ew-reviews-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1f2937;
+  margin: 32px 0;
+}
+
+/* Summary Card */
+.ew-summary-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.ew-score-column {
+  text-align: left;
+}
+
+.ew-big-score {
+  font-size: 42px;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1;
+}
+
+.ew-stars-gold {
+  color: var(--ew-gold, #f59e0b);
+  font-size: 20px;
+  margin: 4px 0;
+  letter-spacing: 2px;
+}
+
+.ew-score-label {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.ew-trust-stamp-column {
+  text-align: right;
+  max-width: 380px;
+}
+
+.ew-trust-mark {
+  color: #059669;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.ew-trust-desc {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 4px 0 14px;
+  line-height: 1.4;
+}
+
+/* Buttons */
+.ew-btn-primary {
+  display: inline-block;
+  background: var(--ew-primary, #2563eb);
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s ease, filter 0.15s ease;
+}
+
+.ew-btn-primary:hover {
+  filter: brightness(0.9);
+}
+
+/* Review Cards List */
+.ew-review-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ew-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 18px 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.ew-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ew-card-stars {
+  color: var(--ew-gold, #f59e0b);
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-right: 8px;
+}
+
+.ew-card-author {
+  font-size: 14px;
+  color: #111827;
+}
+
+.ew-card-badges {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ew-card-verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #f0fdf4;
+  color: #15803d;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  border: 1px solid #bbf7d0;
+  line-height: 1.2;
+}
+
+.ew-tier-purchase {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+
+.ew-tier-email {
+  background: #f0fdf4;
+  color: #15803d;
+  border-color: #bbf7d0;
+}
+
+.ew-tier-incentivized {
+  background: #fffbeb;
+  color: #b45309;
+  border-color: #fde68a;
+}
+
+.ew-tier-imported {
+  background: #f1f5f9;
+  color: #475569;
+  border-color: #cbd5e1;
+}
+
+.ew-badge-icon {
+  font-size: 11px;
+  line-height: 1;
+}
+
+/* 2b. Disclosure Elements */
+.ew-widget-disclosure {
+  margin: -12px 0 20px 0;
+}
+
+.ew-disclosure-details {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+}
+
+.ew-disclosure-summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #4b5563;
+  user-select: none;
+}
+
+.ew-disclosure-summary:hover {
+  color: #111827;
+}
+
+.ew-disclosure-content {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+/* Standalone [ewithme_disclosure] shortcode box */
+.ew-disclosure-box {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin: 20px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.ew-disclosure-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.ew-disclosure-text {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Incentive checkbox inside modal */
+.ew-incentive-group {
+  background: #fffbeb;
+  border: 1px solid #fef3c7;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.ew-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  color: #92400e;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.ew-checkbox-label input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.ew-card-title {
+  margin: 0 0 6px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.ew-card-text {
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #4b5563;
+}
+
+.ew-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #9ca3af;
+  border-top: 1px solid #f3f4f6;
+  padding-top: 10px;
+}
+
+.ew-cert-link {
+  color: var(--ew-primary, #2563eb);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.ew-cert-link:hover {
+  text-decoration: underline;
+}
+
+/* 3. Modal Popup Form */
+.ew-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.ew-modal-content {
+  background: #ffffff;
+  border-radius: 14px;
+  max-width: 500px;
+  width: 100%;
+  padding: 28px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.ew-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ew-modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.ew-modal-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  color: #9ca3af;
+}
+
+.ew-modal-close:hover {
+  color: #111827;
+}
+
+/* Star Rating Selector in Modal */
+.ew-star-rating-select {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.ew-star-opt {
+  color: #d1d5db;
+  transition: color 0.15s ease;
+  padding: 0 2px;
+}
+
+.ew-star-opt:hover,
+.ew-star-opt:hover ~ .ew-star-opt,
+.ew-star-opt.active,
+.ew-star-opt.active ~ .ew-star-opt {
+  color: var(--ew-gold, #f59e0b);
+}
+
+/* Form inputs */
+.ew-form-row {
+  display: flex;
+  gap: 12px;
+}
+
+.ew-form-group {
+  margin-bottom: 14px;
+  flex: 1;
+  text-align: left;
+}
+
+.ew-form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.ew-form-group input,
+.ew-form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.ew-form-group input:focus,
+.ew-form-group textarea:focus {
+  outline: none;
+  border-color: var(--ew-primary, #2563eb);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.ew-help {
+  font-size: 11px;
+  color: #6b7280;
+  display: block;
+  margin-top: 4px;
+}
+
+.ew-form-actions {
+  margin-top: 18px;
+  text-align: right;
+}
+
+.ew-form-status {
+  margin-top: 14px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  text-align: left;
+}
+
+.ew-form-status.success {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.ew-form-status.error {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+@media (max-width: 600px) {
+  .ew-summary-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ew-score-column,
+  .ew-trust-stamp-column {
+    text-align: center;
+    max-width: 100%;
+  }
+  .ew-trust-mark {
+    justify-content: center;
+  }
+  .ew-form-row {
+    flex-direction: column;
+  }
+}
+
+/* 7. Independent Review Audit Badge ([ewithme_audit_badge]) */
+.ew-audit-badge-wrap {
+  display: inline-block;
+  margin: 12px 0;
+}
+
+.ew-audit-badge-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 9999px;
+  padding: 6px 14px;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 12.5px;
+  color: #334155;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.ew-audit-badge-link:hover {
+  background: #ffffff;
+  border-color: #0284c7;
+  color: #0284c7;
+  box-shadow: 0 2px 6px rgba(2, 132, 199, 0.15);
+  text-decoration: none;
+}
+
+.ew-audit-badge-icon {
+  font-size: 13px;
+  line-height: 1;
+}
+
+.ew-audit-badge-title {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.ew-audit-badge-state {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.ew-audit-badge-arrow {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+/* 4. Merchant Reply Card */
+.ew-merchant-reply {
+  margin-top: 12px;
+  padding: 12px 14px;
+  background: #f8fafc;
+  border-left: 3px solid var(--ew-primary, #2563eb);
+  border-radius: 0 8px 8px 0;
+  font-size: 13px;
+}
+
+.ew-merchant-reply-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.ew-merchant-badge {
+  font-weight: 700;
+  color: #1e293b;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ew-merchant-date {
+  font-size: 11.5px;
+  color: #94a3b8;
+}
+
+.ew-merchant-reply-text {
+  margin: 0;
+  color: #334155;
+  line-height: 1.5;
+}
